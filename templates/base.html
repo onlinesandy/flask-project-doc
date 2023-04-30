@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)/documentation.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Project Documentation Template" />
+    <meta name="author" content="Project" />
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/images/favicon.png" />
+    <!-- Site Title -->
+    <title>Project Documentation Template</title>
+    <!-- Bootstrap 5 Core CSS -->
+    <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/static/assets/css/animate.min.css" />
+    <link rel="stylesheet" href="/static/assets/css/aos.css" />
+    <link rel="stylesheet" href="/static/assets/css/style.css" />
+    <link rel="stylesheet" href="/static/assets/css/prism.css" />
+    <link rel="stylesheet" href="/static/assets/css/doc.css" />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="/static/assets/fonts/fonts.css" type="text/css" />
+</head>
+
+<body class="doc-body doc-style2 loaded" data-bs-spy="scroll" data-bs-target="#nav-scroll" data-aos-easing="ease"
+    data-aos-duration="1200" data-aos-delay="0">
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <div id="#top"></div>
+
+    {% include "sidebar.html" %} {% include "top_header.html" %}
+
+    <div class="page-container">
+        <div class="doc-container container-fluid">
+            {% block page_content %}{% endblock page_content %}
+        </div>
+    </div>
+
+
+    {% include "footer.html" %}
+    <!-- Core JavaScript -->
+    <script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/assets/js/theme.js"></script>
+    <script src="/static/assets/js/prism.js"></script>
+    <script src="/static/assets/js/clipboard.min.js"></script>
+    <script>
+        var clipboard = new ClipboardJS(".btn");
+
+        clipboard.on("success", function(e) {
+            console.log(e);
+            e.clearSelection();
+        });
+
+        clipboard.on("error", function(e) {
+            console.log(e);
+            e.clearSelection();
+        });
+    </script>
+    <!-- / copy-to-clipboard -->
+</body>
+
+</html>

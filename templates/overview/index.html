@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+{% block page_content %}
+
+<div class="row">
+    <div class="col-lg-9">
+        {% include 'overview/content.html' %}
+    </div>
+   
+    <div class="col-lg-3">
+        <div class="doc-sidebar">
+            <ul id="nav-scroll" class="nav flex-column doc-sidebar-nav sticky-top top-25">
+                <li class="nav-item">
+                    <a class="nav-link disabled nav-title" href="#x">Overview page</a>
+                </li>
+                {% include 'overview/menu.html' %} 
+            </ul>
+        </div>   
+    </div>
+  
+  </div>
+
+  {% endblock page_content %}

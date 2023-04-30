@@ -1,0 +1,74 @@
+<div id="setup-sass" class="doc-wrapper">
+    <h6 class="doc-title">
+        Setup Sass <a href="#setup-sass"><i class="fas fa-link"></i></a>
+    </h6>
+    <p class="mb-30">
+        To use SASS you will have to use a SASS Processor application,
+        like
+        <a href="https://scout-app.io/" target="_blank">Scout App</a>,
+        it is available for Linux 32 / 64bit, Mac and Windows, it
+        requires project setup in order to process the SASS files from a
+        set folder or you can also use
+        <a href="https://prepros.io/" target="_blank">Prepros</a>, it is
+        also available for Linux, Mac and Windows and it is a bit easier
+        to setup this application.
+    </p>
+
+    <h6 id="change-variables-link" class="doc-sub-title">
+        Change Variables
+        <a href="#change-variables-link"><i class="fas fa-link"></i></a>
+    </h6>
+    <p>
+        To edit any theme file you will need a Text or Code Editor, we
+        recommend using
+        <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>, as it is the Text Editor of our
+        choice to write code, but
+        every Text or Code Editor will work fine to edit any theme
+        files.
+    </p>
+    <p>
+        To change the theme's fonts, colors and other variables, please
+        open the _variables.scss file from assets / scss folder and
+        modify the font-family to your preferred font, font-weights, the
+        letter-spacing values, change color codes and you can also add
+        custom variables of any type if needed:
+    </p>
+    <div class="doc-holder">
+        <div class="doc-result-footer text-center b-1">
+            <button class="btn btn-primary btn-code" type="button" data-bs-toggle="collapse"
+                data-bs-target="#variables-scss-collapse" aria-expanded="false" aria-controls="variables-scss-collapse">
+                <i class="fas fa-code fs-16 va-middle mr-5"></i>
+                <span>View Code</span>
+            </button>
+        </div>
+        <!-- / doc-result-footer -->
+        <div class="collapse" id="variables-scss-collapse">
+            <div class="doc-code">
+                <pre class="language-markup">
+                    <button class="btn btn-copy" data-clipboard-action="copy" data-clipboard-target="#variables-scss">
+                        <i class="far fa-clone mr-5"></i> Copy</button>
+                        <code id="variables-scss" class=" language-markup">
+                            // Typography
+
+                                $title-font: 'Jost', sans-serif;
+                                $primary-font: 'Jost', sans-serif;
+                                $secondary-font: 'Jost', sans-serif;
+                                $thin: 100;
+                                $light: 300;
+                                $regular: 400;
+                                $medium: 500;
+                                $bold: 700;
+                                $lsp: 0.015rem;
+                                $lsp-2x: 0.03rem;
+                                $lsp-big: 0.05rem;
+                                $lsp-extra: 0.15rem;
+                        </code>
+                    </pre>
+                <!-- / code -->
+            </div>
+            <!-- / doc-code -->
+        </div>
+        <!-- / collapse -->
+    </div>
+    <!-- doc-holder -->
+</div>
